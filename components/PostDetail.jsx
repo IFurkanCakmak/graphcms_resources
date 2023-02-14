@@ -5,7 +5,7 @@ import { FacebookShareButton, FacebookIcon, LinkedinShareButton, LinkedinIcon, W
 
 
 const PostDetail = ({article}) => {
-const sharedUrl = `/article/${article.slug}`
+const sharedUrl = `https://graphcms-resources.vercel.app//article/${article.slug}`
 
 
   const getContentFragment = (index, text, obj, type) => {
