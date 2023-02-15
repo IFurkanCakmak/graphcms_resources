@@ -66,9 +66,9 @@ const sharedUrl = `/article/${article.slug}`
      className='align-middle rounded-full -mt-2'
      src={article.author.photo.url}
     />
-    <p className='inline align-middle text-gray-700 ml-2 mb-1 text-lg'>{article.author.name}</p>
+    <p className='inline align-middle text-gray-700 ml-2 mb-1 text-sm lg:text-lg md:text-lg sm:text-lg'>{article.author.name}</p>
     </div>
-    <div className='font-medium text-gray-700  -mt-5 -ml-36 lg:-mt-1 lg:ml-2'>
+    <div className='font-medium text-gray-700  -mt-5 -ml-18 lg:-mt-1 lg:ml-2 text-sm lg:text-lg sm:text-lg'>
     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-6 inline mr-2 text-teal-600 -mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
        </svg>
@@ -79,53 +79,38 @@ const sharedUrl = `/article/${article.slug}`
     </div>
     
   </div>
+ 
   <div  className='-mt-8 -ml-5'
-    > <FacebookShareButton 
+    > <LinkedinShareButton
             url={sharedUrl}
             quote={'Dummy text!'}
             hashtag="#muo"
           >
-            <FacebookIcon size={24} round className='ml-4' />
-          </FacebookShareButton>
+            <LinkedinIcon size={26} round className='ml-4' />
+          </LinkedinShareButton>
 
     <WhatsappShareButton
             url={sharedUrl}
             quote={'Dummy text!'}
             hashtag="#muo"
           >
-            <WhatsappIcon size={24} round className='-ml-3' />
+            <WhatsappIcon size={26} round className='-ml-3' />
           </WhatsappShareButton>
 
-    <LinkedinShareButton
+    <TwitterShareButton
             url={sharedUrl}
             quote={'Dummy text!'}
             hashtag="#muo"
           >
-            <LinkedinIcon size={24} round className='-ml-10' />
-          </LinkedinShareButton>
-
-    <TelegramShareButton className='-ml-1'
-            url={sharedUrl}
-            quote={'Dummy text!'}
-            hashtag="#muo"
-          >
-            <TelegramIcon size={24} round className='-ml-16' />
-          </TelegramShareButton>
-
-    <TwitterShareButton className='-mr-3 ml-1'
-            url={sharedUrl}
-            quote={'Dummy text!'}
-            hashtag="#muo"
-          >
-            <TwitterIcon size={24} round className='-ml-24' />
+            <TwitterIcon size={26} round className='-ml-10' />
           </TwitterShareButton>
 
-    <EmailShareButton
+    <EmailShareButton className='-ml-1'
             url={sharedUrl}
             quote={'Dummy text!'}
             hashtag="#muo"
           >
-            <EmailIcon size={24} round className='-ml-28' />
+            <EmailIcon size={26} round className='-ml-16' />
           </EmailShareButton>
     </div>
    
