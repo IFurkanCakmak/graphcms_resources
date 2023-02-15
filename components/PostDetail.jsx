@@ -2,8 +2,6 @@ import React from "react";
 import moment from "moment";
 import { type } from "os";
 import {
-  FacebookShareButton,
-  FacebookIcon,
   LinkedinShareButton,
   LinkedinIcon,
   WhatsappShareButton,
