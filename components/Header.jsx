@@ -59,7 +59,7 @@ const Header = () => {
               <ul className="h-screen md:h-auto items-center md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
                 
                 {categories.map((category) =>(
-                    <Link key={category.slug} href={`/category/${category.slug}`}>
+                    <Link key={category.slug} href={`/category/${category.slug}`} onClick={() => setNavbar(!navbar)}>
                     <span className="md:float-right mt-5 align-middle text-white ml-4 font-semibold cursor-pointer">
                     <li className=" md:px-2 text-center border-b-2 md:border-b-0  hover:bg-teal-600  border-teal-600  md:hover:text-teal-600 md:hover:bg-transparent">
                     {category.name}
