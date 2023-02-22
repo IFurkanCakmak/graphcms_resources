@@ -13,7 +13,7 @@ import {
 } from "react-share";
 
 const PostDetail = ({ article }) => {
-  const sharedUrl = `https://graphcms-resources.vercel.app/article/${article.slug}`;
+  const sharedUrl = `https://izzetfurkancakmak.xyz/article/${article.slug}`;
 
   const getContentFragment = (index, text, obj, type) => {
     let modifiedText = text;
