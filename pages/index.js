@@ -9,7 +9,7 @@ export default function Home ({articles}) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
-        <title>Izzet Furkan Cakmak - Computer Engineer</title>
+        <title>Izzet Furkan Cakmak - Computer Engineer - Articles</title>
         <link rel="icon" href="/canonical.png" />
       </Head>
       <TopArticles/>
