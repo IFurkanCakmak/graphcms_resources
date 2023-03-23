@@ -13,7 +13,7 @@ export default function Home ({articles}) {
         <link rel="icon" href="/canonical.png" />
       </Head>
       <TopArticles/>
-      <div className='grid grid cols-1 lg:grid-cols-12 gap-12'>
+      <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
       <div className='lg:col-span-8 col-span-1'>
       {articles.map((article)=> <PostCard article={article.node} key={article.title}/>)}
       </div>
