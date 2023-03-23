@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import {getArticles, getArticleDetails} from '../../services'
 import{ PostDetail, Categories, PostWidget, Author, Comments, CommentsForm , Loader, CurrentPage} from '../../components'
 import { AdjacentPosts } from '../../sections'
+import Head from 'next/head'
 
 const PostDetails = ({article}) => {
 const router= useRouter();
@@ -13,6 +14,10 @@ if(router.isFallback){
 /*that router means we able to see the articles we publish even in deployment version of app*/
   return (
     <div className='container mx-auto px-10 mb-8'>
+    <Head>
+        <title>Article - {article.title} </title>
+        <link rel="icon" href="/canonical.png" />
+      </Head>
     <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
     <div className='col-span-1 lg:col-span-8'>
     <CurrentPage article={article}/>
